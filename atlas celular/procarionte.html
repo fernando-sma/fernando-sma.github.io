@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atlas celular</title>
+    <link rel="icon" href="img/cell.png" />
+
+</head>
+<body onload="criarSvg(31)">  
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src = "logica.js"></script>
+    <!-- Navbar -->
+    <div id = "navbar">
+        <ul>
+          <li> <a href="index.html" > <img id = "index" src="img/cell.png" style="height: 4vh; margin-top: 1vh; margin-left: 1vw"/></li></a>
+           <li><a class="active" >Procarionte</a></li>
+           <li><a href="animal.html">Animal</a></li>
+           <li><a href="vegetal.html">Vegetal</a></li>
+           <li><a href="resumo.html">Resumo</a></li>
+          </ul>
+    </div>
+
+    <!-- fim navbar -->
+
+     <!-- modal -->
+
+    <div id="modal" onclick="fecharModal()">
+        <div id="modalConteudo">
+          <span id="botaoFecharModal" onclick="fecharModal()">[x]</span><br />
+          <span id="tituloModal">a</span><br />
+          <span id="descricaoModal">b</span><br />
+        </div>
+      </div>
+      <!-- <div id="conteudo"></div> -->
+    <!-- fim modal -->
+    <div id = "atlas">
+
+    <img id = "imagem" src="img/procarionte.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="" alt="Granos de alimento" title="Granos de alimento" id="0" coords="197,256,15" shape="circle">
+        <area target="" alt="Granos de alimento" title="Granos de alimento" id="1" coords="263,352,14" shape="circle">
+        <area target="" alt="Granos de alimento" title="Granos de alimento" id="2" coords="425,339,12" shape="circle">
+        <area target="" alt="Granos de alimento" title="Granos de alimento" id="3" coords="471,333,10" shape="circle">
+        <area target="" alt="Granos de alimento" title="Granos de alimento" id="4" coords="438,219,11" shape="circle">
+        <area target="" alt="Nucleóide" title="Nucleóide" id="5" coords="361,313,386,311,396,297,403,302,437,305,447,298,461,273,448,250,433,250,412,252,395,250,388,256,371,253,354,261,346,262,338,266,315,255,291,267,262,275,233,272,217,289,224,304,236,318,252,318,268,309,297,296,324,314,339,298" shape="poly">
+        <area target="" alt="Flagelo" title="Flagelo" id="6" coords="157,299,133,299,124,304,96,298,74,307,50,306,34,296,16,273,8,235,30,206,57,192,80,172,82,149,71,125,56,109,44,100,35,84,33,52,47,41,61,33,69,21,67,6,75,22,68,36,52,45,39,55,41,84,52,95,68,109,87,130,91,161,77,189,36,219,22,247,33,279,57,293,99,284,120,291,152,284" shape="poly">
+        <area target="" alt="Cílio" title="Cílio" id="7" coords="327,383,335,431,336,382" shape="poly">
+        <area target="" alt="Cílio" title="Cílio" id="8" coords="358,393,365,415,364,394" shape="poly">
+        <area target="" alt="Cílio" title="Cílio" id="9" coords="452,381,445,416,458,383" shape="poly">
+        <area target="" alt="Cílio" title="Cílio" id="10" coords="285,207,302,169,297,207" shape="poly">
+        <area target="" alt="Cílio" title="Cílio" id="11" coords="221,215,219,175,232,215" shape="poly">
+        <area target="" alt="Cílio" title="Cílio" id="12" coords="230,396,219,429,233,401" shape="poly">
+        <area target="" alt="Cílio" title="Cílio" id="13" coords="453,179,459,163,463,176" shape="poly">
+        <area target="" alt="Plasmídeo" title="Plasmídeo" id="14" coords="388,244,409,233,420,225,421,211,406,211,377,230" shape="poly">
+        <area target="" alt="Ribossomo" title="Ribossomo" id="15" coords="474,306,484,273" shape="rect">
+        <area target="" alt="Ribossomo" title="Ribossomo" id="16" coords="510,325,499,292" shape="rect">
+        <area target="" alt="Ribossomo" title="Ribossomo" id="17" coords="444,342,457,303" shape="rect">
+        <area target="" alt="Ribossomo" title="Ribossomo" id="18" coords="214,341,184,316,201,304,221,327" shape="poly">
+        <area target="" alt="Ribossomo" title="Ribossomo" id="19" coords="306,243,284,227" shape="rect">
+        <area target="" alt="Ribossomo" title="Ribossomo" id="20" coords="391,354,403,308" shape="rect">
+        <area target="" alt="Ribossomo" title="Ribossomo" id="21" coords="313,360,338,336,342,345,334,360" shape="poly">
+        <area target="" alt="Ribossomo" title="Ribossomo" id="22" coords="220,256,9" shape="circle">
+        <area target="" alt="Ribossomo" title="Ribossomo" id="23" coords="469,233,484,217" shape="rect">
+        <area target="" alt="Ribossomo" title="Ribossomo" id="24" coords="175,298,161,276" shape="rect">
+        <area target="" alt="Ribossomo" title="Ribossomo" id="25" coords="324,237,370,252" shape="rect">
+        <area target="" alt="Membrana Plasmática" title="Membrana Plasmática" id="26" coords="238,398,300,396,365,392,442,381,472,378,520,356,503,336,471,352,452,358,397,365,342,375,275,376,260,376,235,367,210,386,181,372,233,364,212,388" shape="poly">
+        <area target="" alt="Membrana Plasmática" title="Membrana Plasmática" id="27" coords="227,364,182,336,160,303,138,305,145,332,177,371" shape="poly">
+        <area target="" alt="Membrana Plasmática" title="Membrana Plasmática" id="28" coords="156,281,190,230,184,211,145,234,131,285,143,283" shape="poly">
+        <area target="" alt="Membrana Plasmática" title="Membrana Plasmática" id="29" coords="190,229,475,201,478,179,185,207,189,216" shape="poly">
+        <area target="" alt="Membrana Plasmática" title="Membrana Plasmática" id="30" coords="511,226,525,302,547,310,552,264,536,224,523,210,507,192,479,180,476,201,493,212" shape="poly">
+        <area target="" alt="Membrana Plasmática" title="Membrana Plasmática" id="31" coords="504,336,521,301,547,310,520,356" shape="poly">
+
+    </map>
+
+    
+    <div id = "svg" >
+    </div>
+</div>
+<div id = "zoom" >
+   <button onclick="zoom('+')"> + </button>
+   <button onclick="zoom('-')"> - </button>
+</div>
+
+<div id = "testePosicaoTela" ></div>
+</body>
+</html>

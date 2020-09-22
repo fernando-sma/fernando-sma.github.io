@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atlas celular</title>
+    <link rel="icon" href="img/cell.png" />
+
+</head>
+<body onload="criarSvg(15)">  
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src = "logica.js"></script>
+    <!-- Navbar -->
+    <div id = "navbar">
+        <ul>
+           <li> <a href="index.html" > <img id = "index" src="img/cell.png" style="height: 4vh; margin-top: 1vh; margin-left: 1vw"/></li></a>
+           <li><a href="procarionte.html">Procarionte</a></li>
+           <li><a class="active" href="animal.html">Animal</a></li>
+           <li><a href="vegetal.html">Vegetal</a></li>
+           <li><a href="resumo.html">Resumo</a></li>
+          </ul>
+    </div>
+
+    <!-- fim navbar -->
+
+     <!-- modal -->
+
+    <div id="modal" onclick="fecharModal()">
+        <div id="modalConteudo">
+          <span id="botaoFecharModal" onclick="fecharModal()">[x]</span><br />
+          <span id="tituloModal">a</span><br />
+          <span id="descricaoModal">b</span><br />
+        </div>
+      </div>
+      <!-- <div id="conteudo"></div> -->
+    <!-- fim modal -->
+    <div id = "atlas">
+
+    <img id = "imagem" src="img/animal.png" usemap="#image-map">
+
+    <map name="image-map">
+            <area target="" alt="Complexo de golgi" title="Complexo de golgi" id="0" coords="113,297,127,335,173,339,193,321,205,303,200,281,191,263,172,245,150,234,117,253,109,279" shape="poly">
+            <area target="" alt="Mitocôndria" title="Mitocôndria" id="1" coords="181,340,195,339,209,347,224,355,249,362,261,365,264,377,257,390,238,394,212,387,189,373,179,361,175,349" shape="poly">
+            <area target="" alt="Mitocôndria" title="Mitocôndria" id="2" coords="145,181,145,163,159,149,185,134,203,131,222,131,233,141,229,153,196,162,186,173,173,183,162,187" shape="poly">
+            <area target="" alt="Mitocôndria" title="Mitocôndria" id="3" coords="321,103,335,88,358,81,380,85,396,91,407,99,409,109,403,119,384,115,371,109,359,112,347,116,336,116" shape="poly">
+            <area target="" alt="Palito laranja" title="Palito laranja" id="4" coords="205,277,216,293,261,350,266,348,255,316" shape="poly">
+            <area target="" alt="Palito laranja" title="Palito laranja" id="5" coords="441,366,477,322,499,304,501,310,455,365" shape="poly">
+            <area target="" alt="Palito laranja" title="Palito laranja" id="6" coords="447,288,441,268,516,232,516,245" shape="poly">
+            <area target="" alt="Palito laranja" title="Palito laranja" id="7" coords="240,159,247,169,321,129,312,122" shape="poly">
+            <area target="" alt="Centríolo" title="Centríolo" id="8" coords="187,200,191,184,251,202,248,221" shape="poly">
+            <area target="" alt="Centríolo" title="Centríolo" id="9" coords="201,255,209,274,265,254,260,239" shape="poly">
+            <area target="" alt="Retículo endoplasmático" title="Retículo endoplasmático" id="10" coords="291,209,354,193,411,216,443,225,463,223,455,185,421,160,367,141,305,160,289,177" shape="poly">
+            <area target="" alt="Retículo endoplasmático" title="Retículo endoplasmático" id="11" coords="287,264,265,270,261,306,319,363,392,365,449,330,446,303,403,317,369,328,332,320,305,296" shape="poly">
+            <area target="" alt="Lisossomos" title="Lisossomos" id="12" coords="121,209,22" shape="circle">
+            <area target="" alt="Lisossomos" title="Lisossomos" id="13" coords="267,109,17" shape="circle">
+            <area target="" alt="Núcleo" title="Núcleo" id="14" coords="295,239,304,219,316,210,331,203,349,202,362,201,383,209,400,217,411,233,420,248,427,281,419,293,409,306,391,321,364,324,349,321,327,313,316,299,303,283,296,263" shape="poly">
+
+        </map>
+    
+    <div id = "svg" >
+    </div>
+</div>
+<div id = "zoom" >
+   <button onclick="zoom('+')"> + </button>
+   <button onclick="zoom('-')"> - </button>
+</div>
+
+<div id = "testePosicaoTela" ></div>
+</body>
+</html>

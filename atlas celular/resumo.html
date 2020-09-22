@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atlas celular</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="cardsResumo.css">
+    <link rel="icon" href="img/cell.png" />
+</head>
+<body>
+  <div id="navbar">
+    <ul>
+     <li> <a href="index.html" > <img id = "index" src="img/cell.png" style="height: 4vh; margin-top: 1vh; margin-left: 1vw"/></li></a>
+     <li><a href="procarionte.html" >Procarionte</a></li>
+     <li><a href="animal.html">Animal</a></li>
+     <li><a href="vegetal.html">Vegetal</a></li>
+     <li><a class="active" href="resumo.html">Resumo</a></li>
+    </ul>
+  </div>
+  <div id = "espaco">.</div>
+
+  <div id = "cards">
+      
+</div>
+
+<script src = "logica.js"></script>
+<script>
+    document.getElementById('cards').innerHTML = 'a'
+    var html = ""
+  for (let index = 0; index < biblioteca.length; index++) {
+    html += '<a class="card"> <h3 class = "tituloCard"><b>'+ biblioteca[index].estrutura + '</b></h3> <img src="img/organelas/' + biblioteca[index].imagem+  '" class="imagemCard"> <div class="container"> <p>' + biblioteca[index].descricao + '</p> </div> </a>'
+    document.getElementById('cards').innerHTML = html;
+ }
+      </script>
+
+
+      
+    
+</body>
+</html>

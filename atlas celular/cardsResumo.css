@@ -1,0 +1,72 @@
+.card {
+    margin-top: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 32vw;
+    float: left;
+    margin: 2px;
+    color: black;
+    height: 55vh;
+    position: relative;
+    height: 65vh;
+}  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}  
+ .container {
+    padding: 2px 16px;
+}
+.tituloCard{
+    text-align: center;
+}
+.imagemCard{
+    width: 30vw;
+    height: 25vh;
+    align-self: center
+}
+
+@media screen and (min-width: 700px) and (min-height: 600px) {  
+   .imagemCard{
+       height: 30vh;
+       width: 20vw;
+       margin-left: 6vw;
+   }    
+}
+@media screen and (max-width: 1000px) {    
+    .card{
+        width: 94vw;
+        height: 85vh;
+        margin: 3vw;  
+    } 
+    .espaco{
+        height:  10vh;
+    }
+    .imagemCard{
+        height: 30vh;
+        width: 45vw;
+        margin-left: 25vw
+    }  
+   li{
+       font-size: 3.3vw
+   }
+ }
+
+ @media screen and (max-height: 450px) { 
+    #index{
+      height: 7vh;
+      width: 4vw;
+    }
+    li{
+        font-size: 3.3vw
+    }
+     .imagemCard{
+         height: 25vh;
+         width: 30vw
+     }
+     .card{
+         padding-top: 3px;
+         height: 90vh;
+         width: 96vw;
+     }
+ }
